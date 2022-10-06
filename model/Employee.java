@@ -1,4 +1,4 @@
-package com.jdbc;
+package com.jdbc.model;
 
 public class Employee {
     private int id;
