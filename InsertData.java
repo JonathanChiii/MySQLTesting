@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class InsertData {
@@ -22,6 +24,11 @@ public class InsertData {
         System.out.println("Enter Salary");
         employee.setSalary(scn.nextInt());
         reg.save(employee);
+
+        FetchData fd = new FetchData();
+        List<Employee> al = new ArrayList<>();
+        al = fd.getAllData();
+        System.out.println(al);
     
     }
 }

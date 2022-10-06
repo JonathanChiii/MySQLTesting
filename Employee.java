@@ -10,6 +10,16 @@ public class Employee {
         super();
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
     public Employee(int id, String name, String email, int salary) {
         this.id = id;
         this.name = name;
